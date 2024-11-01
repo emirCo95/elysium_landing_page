@@ -46,37 +46,51 @@ ul.links li span {
 
 main {
   width: 80%;
+  height: 80vh;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 7%;
 }
 
-main .image {
+main .left {
   position: relative;
+  width: 50%;
+  height: 100%;
 }
 
-main .image .div_1 {
+main .left .image {
   position: absolute;
-  left: -40px;
-  bottom: -40px;
+  top: 100px;
+  left: 100px;
+}
+
+main .left .image img {
   width: 100%;
+  height: 100%;
+}
+
+main .left .box_1 {
+  position: absolute;
+  top: 140px;
+  left: 55px;
+  width: 65%;
   height: 500px;
   z-index: -1;
   background-color: #71697a;
 }
-main .image .div_2 {
+
+main .left .box_2 {
   position: absolute;
-  left: -80px;
-  bottom: -80px;
-  width: 100%;
+  top: 170px;
+  left: 25px;
+  width: 65%;
   height: 500px;
   z-index: -2;
   background-color: #d0e1d4;
 }
-main .image .div_3 {
-  z-index: 1;
+
+main .right {
 }
 
 footer {
